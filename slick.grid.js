@@ -1964,7 +1964,7 @@ if (typeof Slick === "undefined") {
             makeActiveCellEditable();
           }
         } else {
-          setFocus();
+          // setFocus(); // HACK: Stop window from scrolling when clicking on the 'set assignee' button.
         }
       } else {
         activeRow = activeCell = null;
@@ -2532,7 +2532,7 @@ if (typeof Slick === "undefined") {
 
       // if no editor was created, set the focus back on the grid
       if (!currentEditor) {
-        setFocus();
+        // setFocus(); // HACK: Stop page from scrolling when clicking on the delete button/move handle.
       }
     }
 
